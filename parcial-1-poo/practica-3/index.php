@@ -12,7 +12,7 @@ try {
 
     echo $admin->getNombre() . " - " . $admin->getRol() . "<br>";
     echo $alumno->getNombre() . " - " . $alumno->getRol() . "<br>";
-
+    echo "Matrícula: " .  $alumno->getMatricula() ;
     // usuario inválido
     $error = new Admin("Pedro", "correo-mal");
 
