@@ -2,15 +2,10 @@
 
 class Usuario {
 
-    protected $nombre;
-    protected $correo;
+    private $nombre;
+    private $correo;
 
     public function __construct($nombre, $correo) {
-
-        if (!filter_var($correo, FILTER_VALIDATE_EMAIL)) {
-            throw new Exception("Correo inválido: $correo");
-        }
-
         $this->nombre = $nombre;
         $this->correo = $correo;
     }
@@ -23,4 +18,11 @@ class Usuario {
         return $this->correo;
     }
 
+    public function setNombre($nombre) {
+        $this->nombre = $nombre;
+    }
+
+    public function setCorreo($correo) {
+        $this->correo = $correo;
+    }
 }

@@ -7,7 +7,7 @@ class Usuario {
 
     public function __construct($nombre, $correo) {
 
-        if (!filter_var($correo, FILTER_VALIDATE_EMAIL)) {
+        if(!filter_var($correo, FILTER_VALIDATE_EMAIL)){
             throw new Exception("Correo inválido: $correo");
         }
 
@@ -15,12 +15,13 @@ class Usuario {
         $this->correo = $correo;
     }
 
-    public function getNombre() {
+    public function getNombre(){
         return $this->nombre;
     }
 
-    public function getCorreo() {
+    public function getCorreo(){
         return $this->correo;
     }
-
 }
+
+?>

@@ -1,6 +1,18 @@
 # Práctica 4 - POO en PHP
 
-Implementación de herencia en PHP usando la clase base Usuario y las clases derivadas Admin, Alumno e Invitado.
+## Objetivo
+Implementar herencia, validación de datos y manejo de excepciones en PHP.
 
-Materia: Desarrollo Web Avanzado
-Alumno: Salvador Reynoso Villaverde
+## Requisitos
+- PHP 8
+- XAMPP
+- Git
+
+## Ejecución
+Abrir en navegador:
+
+http://localhost/desarrollo-web-avanzado-fimaz-uas/parcial-1-poo/practica-4/index.php
+
+## Evidencia esperada
+- Tabla HTML con usuarios
+- Mensaje de error controlado por correo inválido
